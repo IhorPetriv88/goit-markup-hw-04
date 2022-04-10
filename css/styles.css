@@ -128,6 +128,24 @@ button {
 .site-contact .link:focus {
   color: var(--address-logo-color);
 }
+.contact-media{
+  display: flex;
+}
+.contact-items{
+  margin-top: 32px;
+  margin-right: 10px;
+  margin-bottom: 36px;
+  margin-left: 30px;
+}
+.item{
+  display: flex;
+}
+.contact-items{
+ fill: #757575
+}
+.contact-items:hover{
+  fill: #2196f3;
+}
 
 
 
@@ -197,6 +215,12 @@ button {
   color: var(--tittle-tex-color);
 }
 .section {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../images/peoples.jpg');
+  background-position: center;  
   background-color:#2F303A;
 }
 .section-hero {
@@ -204,7 +228,7 @@ button {
   margin-top: 94px;
 }
 .cards{
-  display: flex;
+  display: inline-flex;
 }
 
 .hero {
@@ -220,9 +244,28 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+ 
+  
 }
 .cards .cards-set+ .cards-set{
   margin-left: 30px;
+}
+
+.company-items-size{
+  display: block;
+  content: '';
+  height: 120px;
+  /* width: 270px; */
+  border-radius: 4px;
+  border: 1px solid transparent ;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+}
+ .company-items{
+  margin-top: 25px;
+  margin-right: 100px;
+  margin-bottom: 25px;
+  margin-left: 100px;
 }
 
 
@@ -246,9 +289,11 @@ button {
   margin-left: 30px;
 }
 .work{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   background-color: #F5F4FA;
   display: flex;
-  
 }
 .work-tittle{
   margin-top: 94px;
@@ -301,12 +346,80 @@ button {
   padding-bottom: 30px;
   
 }
-
-
-
 .works-date .work-figure{
   margin-right: 30px;
 }
+
+
+
+.work-media{
+  display: flex;
+
+  justify-content: center;
+
+  border-radius: 50%;
+  
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+
+.media-items{
+  fill:#AFB1B8;;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  background-color: #FFFFFF;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.work-media .media-items + .media-items{
+  margin-left: 10px;
+}
+.media-items:hover,
+.media-items:focus{
+  fill:#FFFFFF;
+  background-color: #2196f3;
+}
+
+
+
+
+/* NASI KLIENCI */
+.company-list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  
+}
+.company-bottom{
+  background-color:#FFFFFF ;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8 ; 
+  border-radius: 4px;
+  color:#afb1b8;
+  background-color:#FFFFFF ;
+  cursor: pointer;
+}
+/* #afb1b8 колір емблем */
+.company-bottom:hover{
+  color:#2196f3;
+  border-color: #2196f3;
+}
+.company-item{
+  fill:currentColor;
+}
+
+
+
+
 
 
 /* Footer */
@@ -315,6 +428,10 @@ button {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 252px;
 }
 .address-logo-element {
   color: var(--address-logo-color); 
@@ -359,6 +476,70 @@ color: var(--starter-color)
   letter-spacing: 0.03em;
   padding-bottom: 20px;
 }
+
+
+
+.address-media{
+  display: flex;
+}
+.name-media{
+  margin-right: 100px;
+  margin-top: 12px;
+  
+  align-content: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--starter-color);
+}
+.section-address{
+  display: flex;
+  margin-left: 430px;
+  justify-content: baseline;
+}
+.address-social{
+  
+  display: flex;
+  /* margin-top: 12px; */
+  width: 206px;
+  height: 44px;
+  left: 531px;
+  /* top: 2787px; */
+}  
+ .address-items{
+  margin-top: 80px;
+  margin-left: -240px;
+  display: flex;
+  fill:#FFFFFF;;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  background-color: rgba(255, 255, 255, 0.1);;
+  cursor: pointer;
+  /* margin-left: -230px; */
+  
+}
+.address-social .address-items + .address-items{
+  margin-left: 10px;
+}
+.address-items:hover,
+.address-items:focus{
+  fill:#FFFFFF;
+  background-color:#2196f3 ;
+}
+
+
+
+
 
 /* Portfolio */
 .portfolio-nav{
@@ -467,4 +648,10 @@ color: var(--starter-color)
   letter-spacing: 0.03em;
   
   color: var(--tittle-tex-color)
+}
+.portfolio-items:hover{
+  box-shadow:  1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
