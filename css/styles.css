@@ -127,6 +127,7 @@ button {
 .site-contact .link:hover,
 .site-contact .link:focus {
   color: var(--address-logo-color);
+  fill: #2196f3;
 }
 .contact-media{
   display: flex;
@@ -143,9 +144,9 @@ button {
 .contact-items{
  fill: #757575
 }
-.contact-items:hover{
+/* .contact-items:hover{
   fill: #2196f3;
-}
+} */
 
 
 
@@ -463,7 +464,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: var(--starter-color)
+color: var(--starter-color);
 }
 .logo-footer{
   display: block;
@@ -475,16 +476,19 @@ color: var(--starter-color)
   line-height: 1.19;
   letter-spacing: 0.03em;
   padding-bottom: 20px;
+  margin-top: -30px;
+}
+.footer-contact{
+  margin-bottom:60px ;
 }
 
 
 
-.address-media{
-  display: flex;
-}
+
 .name-media{
-  margin-right: 100px;
-  margin-top: 12px;
+  /* display: block;
+  margin-right: -100px;
+  margin-top: 12px; */
   
   align-content: center;
   font-family: 'Roboto';
@@ -497,25 +501,21 @@ color: var(--starter-color)
 
   color: var(--starter-color);
 }
-.section-address{
+
+.h5-footer{
   display: flex;
-  margin-left: 430px;
-  justify-content: baseline;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-left: 295px;
+  margin-bottom: -15px;
 }
-.address-social{
-  
-  display: flex;
-  /* margin-top: 12px; */
-  width: 206px;
-  height: 44px;
-  left: 531px;
-  /* top: 2787px; */
-}  
  .address-items{
-  margin-top: 80px;
-  margin-left: -240px;
-  display: flex;
-  fill:#FFFFFF;;
+  display: inline-block;
+  margin-left: 300px;
+  margin-bottom: -65px;
+ 
+ 
+  fill:#FFFFFF;
   width: 40px;
   height: 40px;
   border-radius: 50%;
