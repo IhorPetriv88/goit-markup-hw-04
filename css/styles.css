@@ -145,7 +145,7 @@ button {
  fill: #757575
 }
 .contact-items:hover{
-  fill: #2196f3;
+  fill: var(--address-logo-color);
 }
 
 
