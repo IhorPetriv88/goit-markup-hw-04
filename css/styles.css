@@ -127,7 +127,7 @@ button {
 .site-contact .link:hover,
 .site-contact .link:focus {
   color: var(--address-logo-color);
-  fill: #2196f3;
+  /* fill: #2196f3; */
 }
 .contact-media{
   display: flex;
@@ -147,6 +147,7 @@ button {
 .contact-items:hover{
   fill: var(--address-logo-color);
 }
+
 
 
 
