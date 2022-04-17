@@ -53,7 +53,7 @@
         <section class="section">
         <div class="container">
         <h1 class="section-tittle">EFEKTYWNE ROZWIĄZANIA<br>DLA WASZEGO BIZNESU</h1>
-        <button class="section-button" type="button">Zamów usługe</button>
+        <button class="section-button" type="button" data-modal-open>Zamów usługe</button>
         </div>
         </section>
         
@@ -111,9 +111,19 @@
             <div class="container">
                 <h2 class="features-tittle">Czym się zajmujemy</h2>
                 <ul class="cards-tittle">
+                    <div class="cards-thumb">
                     <li class="cards-photo"><img class="features-photo-one" src="images/img2.jpg" alt="hands and keyboard" width="370" /></li>
+                    <p class="cards-info">APLIKACJE KOMPUTEROWE</p>
+                    </div>
+                    <div class="cards-thumb">
                     <li class="cards-photo"><img class="features-photo-two" src="images/img3.jpg" alt="hands and iphone" width="370" /></li>
+                    <p class="cards-info">APLIKACJE MOBILNE</p>
+                    </div>
+                    <div class="cards-thumb">
                     <li class="cards-photo"><img class="features-photo-three" src="images/box1.jpg" alt="hands and ipad" width="370" /></li>
+                    <p class="cards-info">ROZWIĄZANIA GRAFICZNE</p>
+                    </div>
+                
                 </ul>
             </div>
         </section>
@@ -281,6 +291,16 @@
                 <a href="tel:+48111111111 " class="address-contact">+48 111 111 111</a>
         </address>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="button-window" data-modal-close>
+                <svg class="close-svg" >
+                    <use href="./images/icons.svg#closed"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
